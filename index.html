@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart with Images</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="product-container">
+    <!-- Product 1 -->
+    <div class="product-card" data-id="1">
+      <img src="image/i.jpg" alt="Product A" style="width: 280px;">
+      <h2>HeadPhone</h2>
+      <p>Price: $<span class="price">30</span></p>
+      <p>Quantity: 
+        <input type="number" class="quantity" value="1" min="1">
+      </p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card" data-id="2">
+      <img src="image/pexels-markus-spiske-1002638.jpg" alt="Product B" style="width: 280px;">
+      <h2>Camera Canon</h2>
+      <p>Price: $<span class="price">50</span></p>
+      <p>Quantity: 
+        <input type="number" class="quantity" value="1" min="1">
+      </p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <!-- Product 3 -->
+    <div class="product-card" data-id="3">
+        <img src="image/i.jpg" alt="Product B" style="width: 280px;">
+        <h2>Camera Canon</h2>
+        <p>Price: $<span class="price">50</span></p>
+        <p>Quantity: 
+          <input type="number" class="quantity" value="1" min="1">
+        </p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+  
+
+    <!-- Product 4 -->
+    <div class="product-card" data-id="4">
+      <img src="image/pexels-stas-knop-1579240.jpg" alt="Product C" style="width: 280px;">
+      <h2>Gameing Keypad</h2>
+      <p>Price: $<span class="price">70</span></p>
+      <p>Quantity: 
+        <input type="number" class="quantity" value="1" min="1">
+      </p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="cart">
+    <h3>Shopping Cart</h3>
+    <ul id="cart-items">
+      <!-- Added items will appear here -->
+    </ul>
+    <p id="total-price"><strong>Total Price: $0</strong></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
